@@ -30,6 +30,19 @@ The script runs a background thread to watch C:/Users/Downloads.
 
 When a file arrives, it checks the extension against a hash map.
 
+## 📦 Installation
+Clone the repo:
+git clone https://github.com/ZorawarSinghSandhu/Intelligent_File_Organizer_AI_Agent.git
+
+Install dependencies:
+pip install watchdog google-generativeai python-dotenv
+
+Create a .env file and add your API key:
+GEMINI_API_KEY=your_api_key_here
+
+Run the agent:
+python cleaner.py
+
 If Known: It moves the file immediately (O(1) complexity).
 
 If Unknown: It sends the filename to Gemini with a prompt: "Classify this file into [Finance, School, Work, Personal]..."
